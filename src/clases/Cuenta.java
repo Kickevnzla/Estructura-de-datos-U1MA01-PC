@@ -74,12 +74,48 @@ public class Cuenta {
         return sb.toString();
     }
 
+    public int getNumCuenta() {
+        return numCuenta;
+    }
+
+    public void setNumCuenta(int numCuenta) {
+        this.numCuenta = numCuenta;
+    }
+
+    public String getNomBanco() {
+        return nomBanco;
+    }
+
+    public void setNomBanco(String nomBanco) {
+        this.nomBanco = nomBanco;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
     public void setRut(Rut rut) {
         this.rut = rut;
     }
 
     public void setCliente(Nombre cliente) {
         this.cliente = cliente;
+    }
+    
+    public void setEstado(String estado) {
+        this.estado = Estado.valueOf(estado);
     }
     
     public void Girar(double monto) {        
