@@ -12,5 +12,5 @@ package clases;
 public enum Estado {
     ACTIVA,
     INACTIVA,
-    CACELADA;
+    CANCELADA;
 }
