@@ -59,17 +59,17 @@ public class Cuenta {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         
-        sb.append(Long.toString(numCuenta));
+        sb.append(Long.toString(this.numCuenta));
         sb.append(",");
-        sb.append(nomBanco);
+        sb.append(this.nomBanco);
         sb.append(",");
-        sb.append(rut.toString());
+        sb.append(this.rut.toString());
         sb.append(",");
-        sb.append(cliente.toString());
+        sb.append(this.cliente.toString());
         sb.append(",");
-        sb.append(Double.toString(saldo));
+        sb.append(Double.toString(this.saldo));
         sb.append(",");
-        sb.append(estado.toString());
+        sb.append(this.estado.toString());
         
         return sb.toString();
     }
